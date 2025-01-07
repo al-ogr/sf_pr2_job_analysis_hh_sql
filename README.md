@@ -33,7 +33,8 @@
 - Текст SQL-запросов и код на Python должны быть читаемыми.
 - Выводы по каждому этапу оформляются в формате Markdown в отдельной ячейке (в шаблоне они помечены как ваши выводы здесь).
 - Выводы можно дополнительно проиллюстрировать с помощью графиков.
-- Не забудьте удалить ячейку с данными соединения перед фиксацией работы в GitHub. *Комментарий:* реализовано хранение параметров подключения в файле *.env*, располагающемся в корне директории ноутбука-шаблона. Содержимое файла:
+- Не забудьте удалить ячейку с данными соединения перед фиксацией работы в GitHub.  
+*Комментарий:* реализовано хранение параметров подключения в файле *.env*, располагающемся в корне директории ноутбука-шаблона. Содержимое файла:
 ```
 DBNAME = ХХХХХХ
 USER = ХХХХХХ
@@ -57,43 +58,43 @@ PORT = 1111
 
 ### Краткая информация о данных
 Схема данных:
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_1.png alt="drawing"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_1.png alt="drawing" style="width:600px;"></center>
 
 Описание таблиц.
 
-**vacancies**
+**VACANCIES**
 
 Таблица хранит в себе данные по вакансиям и содержит следующие столбцы:
 
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_2.png alt="drawing"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_2.png alt="drawing" style="width:500px;"></center>
 
 Зарплатная вилка — это верхняя и нижняя граница оплаты труда в рублях (зарплаты в других валютах уже переведены в рубли). Соискателям она показывает, в каком диапазоне компания готова платить сотруднику на этой должности.
 
-**areas**
+**AREAS**
 
 Таблица-справочник, которая хранит код региона и его название.
 
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_3.png alt="drawing"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_3.png alt="drawing" style="width:500px;"></center>
 
-**employers**
+**EMPLOYERS**
 
 Таблица-справочник со списком работодателей.
 
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_4.png alt="drawing"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_4.png alt="drawing" style="width:500px;"></center>
 
-**industries**
+**INDUSTRIES**
 
 Таблица-справочник вариантов сфер деятельности работодателей.
 
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_5.png alt="drawing"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_5.png alt="drawing" style="width:500px;"></center>
 
-**employers_industries**
+**EMPLOYERS_INDUSTRIES**
 
 Дополнительная таблица, которая существует для организации связи между работодателями и сферами их деятельности.
 
 Эта таблица нужна нам, поскольку у одного работодателя может быть несколько сфер деятельности (или работодатели могут вовсе не указать их). Для удобства анализа необходимо хранить запись по каждой сфере каждого работодателя в отдельной строке таблицы.
 
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_6.png alt="drawing"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_6.png alt="drawing" style="width:500px;"></center>
   
 :arrow_up:[к оглавлению](README.md#Оглавление)
 
