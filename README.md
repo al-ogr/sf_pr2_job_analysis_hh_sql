@@ -58,7 +58,7 @@ PORT = 1111
 
 ### Краткая информация о данных
 Схема данных:
-<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_1.png alt="drawing" style="width:600px;"></center>
+<center><img src = https://github.com/al-ogr/sf_pr2_job_analysis_hh_sql/blob/main/img/2_1.png alt="drawing" style="width:500px;"></center>
 
 Описание таблиц.
 
